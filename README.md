@@ -65,7 +65,7 @@ csvExporter.generateCsv(data);
 | Option        | Default           | Description  |
 | :------------- |:-------------:| -----|
 | **fieldSeparator**      | , | Defines the field separator character |
-| **filename**      | 'generated' | Sets the name of the downloaded file. ".csv" will be appended to the value provided. |
+| **filename**      | 'generated' | Sets the name of the downloaded file. ".csv" will be appended to the value provided. The file name will be same as given. |
 | **quoteStrings**      | "      | If provided, will use this characters to "escape" fields, otherwise will use double quotes as deafult |
 | **decimalSeparator** | .      | Defines the decimal separator character (default is .). If set to "locale", it uses the [language sensitive representation of the number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString).|
 | **showLabels** | false      | If true, the first row will be the `headers` option or object keys if `useKeysAsHeaders` is present|
