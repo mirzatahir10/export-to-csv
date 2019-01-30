@@ -112,7 +112,7 @@ export class ExportToCsv {
         let blob = new Blob([this._csv], { "type": "text/" + FileType + ";charset=utf8;" });
 
         if (navigator.msSaveBlob) {
-            let filename = this._options.filename.replace(/ /g, "_") + fileExtension;
+            let filename = this._options.filename + fileExtension;
             navigator.msSaveBlob(blob, filename);
         } else {
             const attachmentType = this._options.useTextFile ? 'text' : 'csv';
@@ -121,7 +121,7 @@ export class ExportToCsv {
             link.href = URL.createObjectURL(blob);
 
             link.setAttribute('visibility', 'hidden');
-            link.download = this._options.filename.replace(/ /g, "_") + fileExtension;
+            link.download = this._options.filename + fileExtension;
 
             document.body.appendChild(link);
             link.click();
