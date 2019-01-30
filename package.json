@@ -1,6 +1,6 @@
 {
     "name": "export-to-csv-file",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Easily create CSV data from json collection",
     "repository": {
         "type": "git",
@@ -12,7 +12,7 @@
         "prepublishOnly": "tsc"
     },
     "keywords": [
-        "export-to-csv",
+        "export-to-csv-file",
         "export-to-excel",
         "csv",
         "excel",
@@ -44,6 +44,9 @@
         "karma-phantomjs-launcher": "^1.0.4",
         "karma-sourcemap-loader": "^0.3.7",
         "karma-typescript": "^3.0.8",
-        "typescript": "~2.4.0"
+        "typescript": "3.2.4"
+    },
+    "dependencies": {
+        "phantomjs": "^2.1.7"
     }
 }

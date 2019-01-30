@@ -1,4 +1,4 @@
-# export-to-csv | Export to CSV Mini Library
+# export-to-csv-file | Export to CSV Mini Library
 Based off of [this library](https://github.com/javiertelioz/angular2-csv) by Javier Telio
 
 > Helper library to quickly and easily create a CSV file in browser or Node
@@ -14,7 +14,7 @@ yarn add export-to-csv
 ## Usage
 ```javascript
 
-import { ExportToCsv } from 'export-to-csv';
+import { ExportToCsv } from 'export-to-csv-file';
 
 var data = [
   {
